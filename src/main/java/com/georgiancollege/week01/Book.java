@@ -89,4 +89,13 @@ public class Book {
     public void setAvailable(boolean available) {
         isAvailable = available;
     }
+
+    // to string
+
+    @Override
+    public String toString() {
+        return bookId + ": The price of " + bookName + " written by " + author + " of genre " +
+                genre + " is " + price + ". Availability: " +
+                (isAvailable ? "Yes" : "No");
+    }
 }
